@@ -1,1 +1,0 @@
-from advanced_function import studentgrate
