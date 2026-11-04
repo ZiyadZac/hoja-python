@@ -1,13 +1,15 @@
-x = [1, 29, 38, 0, -1, 27]
-new=[]
-min=x[0]
-for i in x:
-    for mm in range(len(x)):
-      if i < min:
-        min = i
-        
-    new.append(min)   
+a = [8, 6, 7, 2,1,0]
 
-print(min)  
-print(new)
+for i in range(len(a) - 1):
+    #print(i,'is i')
+    min_pos = i
+    for j in range(i + 1, len(a)):
+        #print(j,"is j")
+        if a[j] < a[min_pos]:
+            min_pos = j
+    temp = a[i]
+    a[i] = a[min_pos]
+    a[min_pos] = temp
+    #print(a)
 
+print(a)
