@@ -20,7 +20,7 @@ def selection(a):
 
 selection(a)
 
-
+#desenting order
 b=selection(a)
 print(b[::-1])
 
