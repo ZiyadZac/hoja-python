@@ -16,7 +16,7 @@ def calculate_total(dicct):
     for x in dicct:
         if x in store:
             print("Item-->",x)
-            print("Prise->",dicct[x],'*',store[x])
+            print("Price->",dicct[x],'*',store[x])
             print()
             i=i+dicct[x]*store[x]
     print()

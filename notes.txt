@@ -4,3 +4,6 @@ ziyad is sick,very sick
 ziyad
 whatttt
 But  whyyyyyyyyyyy
+
+python3 -m streamlit run 6Grocery_AI.py
+-m streamlit run 6.1Grocery.py
