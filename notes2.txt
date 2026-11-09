@@ -1,0 +1,37 @@
+import streamlit as st
+if "board" not in st.session_state:
+    st.session_state.board=[" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+st.title("Tic Tac Toe")
+col1, col2, col3 = st.columns(3)
+col21, col22, col23 = st.columns(3)
+col31, col32, col33 = st.columns(3)
+
+if col1.button(st.session_state.board[0], key="btn_0"):
+    st.session_state.board[0] = "X"
+    st.rerun()
+
+if col2.button(st.session_state.board[1], key="btn_1"):
+    st.write("X")
+
+if col3.button(st.session_state.board[2], key="btn_2"):
+    st.write("X")
+# Row 2
+if col21.button(st.session_state.board[3], key="btn_3"):
+    st.write("X")
+
+if col22.button(st.session_state.board[4], key="btn_4"):
+    st.write("X")
+
+if col23.button(st.session_state.board[5], key="btn_5"):
+    st.write("X")
+
+# Row 3
+if col31.button(st.session_state.board[6], key="btn_6"):
+    st.write("X")
+
+if col32.button(st.session_state.board[7], key="btn_7"):
+    st.write("X")
+
+if col33.button(st.session_state.board[8], key="btn_8"):
+    st.write("X")

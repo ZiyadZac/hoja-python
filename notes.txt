@@ -4,6 +4,13 @@ ziyad is sick,very sick
 ziyad
 whatttt
 But  whyyyyyyyyyyy
+explain like i only know basic python
 
 python3 -m streamlit run 6Grocery_AI.py
+python3 -m streamlit run 8contact_app.py
+python3 -m streamlit run tictactoe.py
+python3 -m streamlit run trial.py
 -m streamlit run 6.1Grocery.py
+
+git push commit -m "
+git push -u origin main
