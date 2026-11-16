@@ -1,0 +1,26 @@
+.head{
+  margin-left: 35%;
+}
+.one button{
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    margin: 0 10px;
+    position: relative;
+    transition: padding-top 1s,
+      padding-bottom 1s,
+      padding-left 1s,
+      padding-right 1s;
+    }
+.one button:hover{
+  padding: 16px 30px;
+    margin: 0 20px;
+    color: wheat;
+    background-color: black;
+  }
+
+  
+
+

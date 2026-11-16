@@ -1,0 +1,18 @@
+.top-section {
+  display: flex;
+  justify-content: space-between; /* Pushes left-side to the left and right-side to the right */
+  align-items: center;
+}             /* Adds nice spacing between the two text items */
+
+.img img{
+  padding-left: 450px;
+  padding-top: 200px;
+  width: 400px;       
+  height: auto;       
+}
+.middle-section{
+  padding-left: 450px;
+  width: auto; 
+  height: auto;
+
+}
