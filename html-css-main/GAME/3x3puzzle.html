@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3x3</title>
+  <style>
+   
+    .all{
+      align-self: center;
+    }
+    img{
+      width: 100px;
+    }
+    .top{
+
+      color: rgb(10, 0, 0);
+      padding-left: 110px
+    }
+    .row-1{
+      display: inline-block;
+    }
+    .row-2{
+      display: inline-block;
+    }
+    .row-3{
+      display: inline-block;
+    }
+    .but-1:hover{
+      cursor: pointer;
+    }
+    .tile-1{
+      display: none;
+    }
+    .tile-1:checked+.but-1 img{
+      transform: rotate(90deg);
+    }
+     .tile-2{
+      display: none;
+    }
+    .tile-2:checked+.but-2 img{
+      transform: rotate(180deg);
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="all">
+    <div class="top">
+      <p>Reassemble the<br>
+     <strong>Intersection</strong></p>
+    </div>
+    <div>
+      <div class="row 1">
+        <input type="checkbox" id="tile1" class="tile-1">
+        <label for="tile1" class="but-1"><img src="1.png"></label>
+        <input type="checkbox" id="tile2" class="tile-2">
+        <label for="tile2" class="but-2"><img src="2.png"></label>
+        <img src="3.png">
+      </div>
+      <div class="row2">
+        <img src="4.png">
+        <img src="5.png">
+        <img src="6.png">
+      </div>
+      <div class="row 3">
+        <img src="7.png">
+        <img src="8.png">
+        <img src="9.png">
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

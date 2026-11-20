@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .b:hover{
+      background-color: #54a7ef;
+    }
+    .red:hover{
+      background-color: red;
+    }
+    .d:hover{
+      background-color: darkblue;
+    }
+    html:has(#blue:checked) body {
+    background-color: #54a7ef;
+    }
+    html:has(#red:checked) body{
+      background-color: red;
+    }
+    html:has(#dark:checked) body{
+      background-color: darkblue;
+    }
+    body{
+      transition: 1s ease;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="b">Blue</button>
+  <button class="red">Red</button>
+  <button class="d">Dark</button>
+  <hr>
+  <input type="radio" name="colour" id="blue">
+  <input type="radio" name="colour"  id="red">
+  <input type="radio" name="colour"  id="dark">
+  <input type="radio" name="colour"  id="df">
+</body>
+</html>

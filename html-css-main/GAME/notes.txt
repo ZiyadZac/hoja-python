@@ -1,0 +1,1 @@
+Build an interactive Color Theme Switcher using only HTML and CSS (no JavaScript allowed). When a user selects a color option from a dropdown box (or radio selector), the background color of the entire page must smoothly transition to that color.

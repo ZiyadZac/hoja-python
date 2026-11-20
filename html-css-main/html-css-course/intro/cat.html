@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile</title>
+  <style>
+    .profile{
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      margin-left: 5px;
+      padding-bottom: 5px;
+      
+    }
+    .mutual{
+      color: gray;
+      padding-top: 0;
+      margin-top: 0;
+      padding-left: 5px;
+    }
+    .name{
+      margin-bottom: 0;
+      padding-left: 5px;
+    }
+    .add{
+      background-color: rgb(24, 119, 242);
+      color: white;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-left: 8px;
+      margin-bottom: 10px;
+      transition: 1ms;
+
+    }
+    .add:hover{
+      background-color: rgb(68, 139, 232);
+      cursor: pointer;
+    }
+    .add:active{
+      color: rgb(24, 119, 242);
+      background-color: antiquewhite;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <img src="cat.jpg" width="200px">
+    <p class="name"><strong>Oliver</strong></p>
+    <p class="mutual">2 mutual friends</p>
+    <button class="add">Add Friend</button>
+  </div>
+
+  <div class="profile">
+    <img src="cat2.jpg" width="200px">
+    <p class="name"><strong>Mimi</strong></p>
+    <p class="mutual">3 mutual friends</p>
+    <button class="add">Add Friend</button>
+  </div>
+
+  <div class="profile">
+    <img src="dog.jpg" width="200px">
+    <p class="name"><strong>Rex</strong></p>
+    <p class="mutual">4 mutual friends</p>
+    <button class="add">Add Friend</button>
+  </div>
+</body>
+</html>

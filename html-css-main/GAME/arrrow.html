@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Puzzle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Outer Container Card */
+        .all {
+            width: 320px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        /* Top Header Banner */
+        .top {
+            background-color: #4a90e2;
+            color: #ffffff;
+            padding: 15px 20px;
+        }
+
+        .top p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .top strong {
+            font-size: 20px;
+        }
+
+        /* Puzzle Grid Container */
+        .puzzle-grid {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        /* Hide standard checkboxes */
+        .toggle-checkbox {
+            display: none;
+        }
+
+        /* Label styled as clickable tile button */
+        .tile-btn {
+            display: inline-block;
+            width: 95px;
+            height: 95px;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .tile-btn img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.3s ease; /* Smooth rotation transition */
+        }
+
+        /* Hover effect */
+        .tile-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Rotation Logic: Rotate image 90deg when checkbox is checked */
+        .toggle-checkbox:checked + .tile-btn img {
+            transform: rotate(90deg);
+        }
+
+        /* Bottom Action Bar */
+        .bottom-bar {
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .refresh-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .verify-btn {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .verify-btn:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="all">
+        <!-- Top Banner -->
+        <div class="top">
+            <p>Reassemble the<br><strong>Intersection</strong></p>
+        </div>
+
+        <!-- 3x3 Image Grid -->
+        <div class="puzzle-grid">
+            <!-- Row 1 -->
+            <div class="row">
+                <input type="checkbox" id="tile-1" class="toggle-checkbox">
+                <label for="tile-1" class="tile-btn"><img src="1.png" alt="1"></label>
+
+                <input type="checkbox" id="tile-2" class="toggle-checkbox">
+                <label for="tile-2" class="tile-btn"><img src="2.png" alt="2"></label>
+
+                <input type="checkbox" id="tile-3" class="toggle-checkbox">
+                <label for="tile-3" class="tile-btn"><img src="3.png" alt="3"></label>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row">
+                <input type="checkbox" id="tile-4" class="toggle-checkbox">
+                <label for="tile-4" class="tile-btn"><img src="4.png" alt="4"></label>
+
+                <input type="checkbox" id="tile-5" class="toggle-checkbox">
+                <label for="tile-5" class="tile-btn"><img src="5.png" alt="5"></label>
+
+                <input type="checkbox" id="tile-6" class="toggle-checkbox">
+                <label for="tile-6" class="tile-btn"><img src="6.png" alt="6"></label>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row">
+                <input type="checkbox" id="tile-7" class="toggle-checkbox">
+                <label for="tile-7" class="tile-btn"><img src="7.png" alt="7"></label>
+
+                <input type="checkbox" id="tile-8" class="toggle-checkbox">
+                <label for="tile-8" class="tile-btn"><img src="8.png" alt="8"></label>
+
+                <input type="checkbox" id="tile-9" class="toggle-checkbox">
+                <label for="tile-9" class="tile-btn"><img src="9.png" alt="9"></label>
+            </div>
+        </div>
+
+        <!-- Bottom Action Bar -->
+        <div class="bottom-bar">
+            <button class="refresh-btn">🔄</button>
+            <button class="verify-btn">Verify</button>
+        </div>
+    </div>
+
+</body>
+</html>
